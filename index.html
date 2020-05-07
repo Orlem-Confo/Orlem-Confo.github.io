@@ -1,111 +1,579 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>ORLEM CONFIRMATION</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="./css/main.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon.png">
-<link rel="manifest" href="/site.webmanifest">
-<script src="https://kit.fontawesome.com/yourcode.js"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon.png">  -->
+
+  <!-- Chrome, Firefox black header -->
+  <meta name="theme-color" content="#000000">
+
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+
+  <!-- Favicons -->
+  <!-- <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!--  w3css CSS File-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+    
+    
+  <style>
+    /* MODAL POSITION */
+      .w3-modal{z-index:3;
+        display:none;padding-top:100px;position:center;
+        left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);
+        background-color:rgba(0,0,0,0.4)}
+  .w3-modal-content{margin:auto;background-color:#fff;position:relative;
+    padding:0;outline:0;width:600px}
+  </style>
 </head>
+
+
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#index.html" class="w3-bar-item w3-button w3-wide"> &nbsp;&nbsp;&nbsp;&nbsp; ORLEM CONFIRMATION </a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="./nav_pages/classes.html" class="w3-bar-item w3-button"> Classes </a>
-      <a href="./nav_pages/test.html" class="w3-bar-item w3-button"> Tests </a>
-      <a href="./nav_pages/update.html" class="w3-bar-item w3-button"> Updates </a>
-      <a href="./nav_pages/contact.html" class="w3-bar-item w3-button"> Contact </a>
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <p style="color: azure; font-size: large;">Orlem Confirmation</p>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">Classes</a></li>
+          <li class="menu-has-children"><a href="">Extras</a>
+            <ul>
+              <li><a href="https://www.vatican.va/archive/ENG0015/_INDEX.HTM">CCC</a></li>
+              <li><a href="https://www.biblegateway.com/versions/New-Revised-Standard-Version-NRSV-Bible/#booklist">
+                NRSV Bible</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  </header><!-- #header -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="./nav_pages/classes.html" onclick="w3_close()" class="w3-bar-item w3-button"> Classes </a>
-  <a href="./nav_pages/test.html" onclick="w3_close()" class="w3-bar-item w3-button"> Tests </a>
-  <a href="./nav_pages/update.html" onclick="w3_close()" class="w3-bar-item w3-button"> Updates </a>
-  <a href="./nav_pages/contact.html" onclick="w3_close()" class="w3-bar-item w3-button"> Contact </a>
-</nav>
+        <ol class="carousel-indicators"></ol>
 
-<br>
-<br>
-<br>
+        <div class="carousel-inner" role="listbox">
 
-<h1> CONFIRMATION 2020 </h1>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<center>
-<div class="rectangle">
-  <br>
-<h2> Due to the coronavirus outbreak, Confirmation classes will be online. We will be including additional references along with the lectures and there will also be tests to check if the students have understood the course materials. </h2>
-<br>
-<br>
-<div class="wrapper">
-<button class="button1">
-   <a href="./nav_pages/classes.html"> Learn Now </a> </div> </button>
-</center>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<footer>
-  <center>
-    <br>
-    <br>
-    <br>
-  <p> Our Lady Of Lourdes Church </p>
-</center>
-</footer>
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="img/intro-carousel/Sacred-Heart-of-Jesus.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content"><br><br><br><br><br><br><br><br><br>
+                <h2>Orlem Confo 2020</h2>
+                <p>
+                  General Updates: <br>
+                  Due to the coronavirus outbreak, Confirmation classes will be online. We will be including additional 
+                  references along with the lectures and there will also be tests to 
+                  check if the students have understood the course materials. 
+                </p>
+                <a href="#featured-services" class="btn-get-started scrollto">Recents</a>
+              </div>
+            </div>
+          </div>
+      </div>
+        </div>
+      </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      Daily Updates Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 box">
+            <i class="ion-ios-bookmarks-outline"></i>
+            <h4 class="title"><a href="">Lecture Notes (Latest)</a></h4>
+            <p class="description">
+              X<sup>th</sup> : <a href=""> Dated link</a> <br>
+              XI<sup>th</sup> : <a href="">  Dated link</a>
+            </p>
+          </div>
+
+          <div class="col-lg-4 box">
+            <i class="ion-ios-stopwatch-outline"></i>
+            <h4 class="title"><a href="">Online Class (Latest)</a></h4>
+            <p class="description">
+              X<sup>th</sup> : <a href=""> Dated link</a> <br>
+              XI<sup>th</sup> : <a href="">  Dated link</a>
+            </p>
+          </div>
+
+          <div class="col-lg-4 box">
+            <i class="ion-ios-email-outline"></i>
+            <h4 class="title"><a href="">Tests (Latest)</a></h4>
+            <p class="description">
+              X<sup>th</sup> : <a href=""> Dated link</a> <br>
+              XI<sup>th</sup> : <a href="">  Dated link</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- #featured-services -->
+
+    <!--==========================
+      Classes Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Classes</h3>
+          <p>Lecture links, Notes and Tests arranged chronologically within each section</p>
+        </header>
+
+        <div class="row about-cols justify-content-center">
+
+          <div class="col-md-4 wow fadeInUp ">
+            <div class="about-col ">
+              <div class="img">
+                <img src="img/about-mission.jpg" alt="" class="img-fluid">
+                <div class="icon">
+                    <i class="ion-ios-speedometer-outline" onclick="document.getElementById('id01').style.display='block'"></i>
+                </div>
+              </div>
+              <h2 class="title"><a href="#">X<sup>th</sup></a></h2>
+              <p class="w3-center-align">
+                Click for more info
+              </p>
+            </div>
+          </div> 
+            
+<!--          Icon click will result into Tabbed Pop up-->
+<!--            Xth Section (Pop Up)        -->
+
+           <div style="display: none" id="id01" class="w3-modal w3-center">
+             <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                 
+              <header class="w3-container w3-black"> 
+               <span onclick="document.getElementById('id01').style.display='none'" 
+               class="w3-button w3-black w3-small w3-display-topright w3-hover-black">&times;</span>
+               <h4 class="w3-margin">X<sup>th</sup> Class-Desk</h4>
+              </header>
+                 
+                <div class="w3-center w3-round w3-modal-content">
+                <input class="w3-hover-shadow w3-margin" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Topics.." title="Type in a topic">
+
+                <table class="w3-center" id="myTable">
+                  <tr class="header">
+
+                  </tr>
+                  <tr class="accordion">
+                    <td>Introduction</td>
+                    <td>Date</td>
+                  </tr>
+                  <tr class="panel">
+                  <td class="w3-row w3-center">
+                    <div class="inline-buttons">
+                    <p>
+                        <button class="one-third btn w3-black w3-margin" href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                    </p>
+                    </div>
+                  </td>
+                </tr>
+                  <tr class="accordion">
+                    <td>Linear Regression</td>
+                    <td>Date</td>
+                  </tr>
+                  <tr class="panel">
+                  <td class="w3-row w3-center">
+                    <div class="inline-buttons">
+                    <p>
+                        <button class="one-third btn w3-black w3-margin" href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                    </p>
+                    </div>
+                  </td>
+                </tr>
+                  <tr class="accordion">
+                    <td>Logistic Regression</td>
+                    <td>Date</td>
+                  </tr>
+                  <tr class="panel">
+                  <td class="w3-row w3-center">
+                    <div class="inline-buttons">
+                    <p>
+                        <button class="one-third btn w3-black w3-margin" href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                    </p>
+                    </div>
+                  </td>
+                </tr>
+                  <tr class="accordion">
+                    <td>CART</td>
+                    <td>Date</td>
+                  </tr>
+                  <tr class="panel">
+                  <td class="w3-row w3-center">
+                    <div class="inline-buttons">
+                    <p>
+                        <button class="one-third btn w3-black w3-margin" href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                    </p>
+                    </div>
+                  </td>
+                </tr>
+                  <tr class="accordion">
+                    <td>Naïve Bayes</td>
+                    <td>Date</td>
+                  </tr>
+                  <tr class="panel">
+                  <td class="w3-row w3-center">
+                    <div class="inline-buttons">
+                    <p>
+                        <button class="one-third btn w3-black w3-margin" href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                    </p>
+                    </div>
+                  </td>
+                </tr>
+                  <tr class="accordion">
+                    <td> K-nearest neighbors</td>
+                    <td>Date</td>
+                  </tr>
+                  <tr class="panel">
+                  <td class="w3-row w3-center">
+                    <div class="inline-buttons">
+                    <p>
+                        <button class="one-third btn w3-black w3-margin" href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                    </p>
+                    </div>
+                  </td>
+                </tr>
+                  
+                </table>
+                </div>
+              <div class="w3-container w3-light-grey w3-padding">
+               <button class="w3-button w3-right w3-white w3-border" 
+               onclick="document.getElementById('id01').style.display='none'">Close</button>
+              </div>
+             </div>
+            </div>
+          <!-- End of Xth Section (Pop Up) -->
+
+          
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about-plan.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline" onclick="document.getElementById('id02').style.display='block'"></i></div>
+              </div>
+              <h2 class="title"><a href="#">XI<sup>th</sup></a></h2>
+              <p class="w3-center-align">
+                Click for more info
+              </p>
+            </div>
+          </div>
+            
+            
+            
+          <!--            XIth Section (Pop Up)        -->
+        <div id="id02" class="w3-modal ">
+             <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                 
+              <header class="w3-container w3-black w3-center"> 
+               <span onclick="document.getElementById('id02').style.display='none'" 
+               class="w3-button w3-black w3-large w3-display-topright w3-hover-black">&times;</span>
+               <h4 class="w3-margin ">XI<sup>th</sup> Class-Desk</h4>
+              </header>
+                 
+                <div class="w3-center w3-round w3-modal-content">
+                <input class="w3-hover-shadow w3-margin" type="text" id="myInput11" onkeyup="myFunction11()" placeholder="Search for Topics.." title="Type in a topic">
+
+                <table class="w3-center" id="myTable11">
+                  <tr class="header">
+
+                  </tr>
+                  <tr class="accordion">
+                    <td>Introduction</td>
+                    <td>Date</td>
+                  </tr>
+                  <tr class="panel">
+                  <td class="w3-row w3-center">
+                    <div class="inline-buttons">
+                    <p>
+                        <button class="one-third btn w3-black w3-margin" href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                    </p>
+                    </div>
+                  </td>
+                </tr>
+                  <tr class="accordion">
+                    <td>Linear Regression</td>
+                    <td>Date</td>
+                  </tr>
+                  <tr class="panel">
+                  <td class="w3-row w3-center">
+                    <div class="inline-buttons">
+                    <p>
+                        <button class="one-third btn w3-black w3-margin" href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                    </p>
+                    </div>
+                  </td>
+                </tr>
+                  <tr class="accordion">
+                    <td>Logistic Regression</td>
+                    <td>Date</td>
+                  </tr>
+                  <tr class="panel">
+                  <td class="w3-row w3-center">
+                    <div class="inline-buttons">
+                    <p>
+                        <button class="one-third btn w3-black w3-margin" href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                    </p>
+                    </div>
+                  </td>
+                </tr>
+                  <tr class="accordion">
+                    <td>CART</td>
+                    <td>Date</td>
+                  </tr>
+                  <tr class="panel">
+                  <td class="w3-row w3-center">
+                    <div class="inline-buttons">
+                    <p>
+                        <button class="one-third btn w3-black w3-margin" href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                    </p>
+                    </div>
+                  </td>
+                </tr>
+                  <tr class="accordion">
+                    <td>Naïve Bayes</td>
+                    <td>Date</td>
+                  </tr>
+                  <tr class="panel">
+                  <td class="w3-row w3-center">
+                    <div class="inline-buttons">
+                    <p>
+                        <button class="one-third btn w3-black w3-margin" href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                    </p>
+                    </div>
+                  </td>
+                </tr>
+                  <tr class="accordion">
+                    <td> K-nearest neighbors</td>
+                    <td>Date</td>
+                  </tr>
+                  <tr class="panel">
+                  <td class="w3-row w3-center">
+                    <div class="inline-buttons">
+                    <p>
+                        <button class="one-third btn w3-black w3-margin" href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                        <button class="one-third btn w3-black w3-margin " href="">Lecture</button>
+                    </p>
+                    </div>
+                  </td>
+                </tr>
+                  
+                  
+                </table>
+                </div>
+              <div class="w3-container w3-light-grey w3-padding">
+               <button class="w3-button w3-right w3-white w3-border" 
+               onclick="document.getElementById('id02').style.display='none'">Close</button>
+              </div>
+             </div>
+            </div> 
+<!--           End of XIth Section (Pop Up)-->
+        </div>
+      </div>
+    </section><!-- #about / classes -->
+
+   
+
+    
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3 style="color: #fff;">Contact Us At</h3>
+            <p style="font-size: large;"><a href="mailto:info@example.com">confirmation2020@gmail.com</a></p>
+        </div>
+
+          
+        </div>
+
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Orlem Confirmation</h3>
+            <p class="description">Our Lady of Lourdes Church, Orlem Malad (West)</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links"><br><br><br><br>
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#intro">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#about">Classes</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+    
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+    
+<!-- Script for Modal [Popup - X]-->
+
+
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
   }
 }
+</script>
 
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
+    
+<!-- End of Script for Modal Filter Search[Popup - X]-->
+    
+<!-- Script for Modal [Popup - XI]-->
+
+<script>
+function myFunction11() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput11");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable11");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+    
+<!-- End of Script for Modal Filter Search[Popup - XI]-->
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }
 </script>
 
