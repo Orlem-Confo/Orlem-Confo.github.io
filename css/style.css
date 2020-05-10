@@ -1242,19 +1242,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 #myTable{
   border-collapse: collapse;
   width: 90%;
-  padding: 12px 20px 12px 40px;
+  padding: 10px 20px 12px 20px;
   border: 1px solid #ddd;
   font-size: 18px;
-  margin: 12px 20px 12px 20px;
+  margin: 12px 15px 12px 15px;
 }
 
 #myTable11{
   border-collapse: collapse;
   width: 90%;
-  padding: 12px 20px 12px 40px;
+  padding: 10px 20px 12px 20px;
   border: 1px solid #ddd;
   font-size: 18px;
-  margin: 12px 20px 12px 20px;
+  margin: 12px 15px 12px 15px;
 }
 
 #myTable th, #myTable td, #myTable11 th, #myTable11 td  {
