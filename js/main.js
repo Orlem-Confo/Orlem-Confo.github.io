@@ -120,7 +120,9 @@
       }
     }
   });
-
+  
+// Intellectual property of https://github.com/jaisal1311 (Jaisal Shah) & https://github.com/sansqra (San Sequeira)
+  
   // Navigation active state on scroll
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, #mobile-nav');
