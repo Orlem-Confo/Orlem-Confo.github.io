@@ -1086,7 +1086,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
   font-size: 15px;
   transition: 0.4s;
@@ -1128,7 +1128,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #myTable{
   border-collapse: collapse;
   width: 90%;
-  padding: 10px 20px 12px 20px;
+  padding: 10px 50px 12px 50px;
   border: 1px solid #ddd;
   font-size: 18px;
   margin: 12px 15px 12px 15px;
@@ -1137,7 +1137,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #myTable11{
   border-collapse: collapse;
   width: 90%;
-  padding: 10px 20px 12px 20px;
+  padding: 10px 50px 12px 50px;
   border: 1px solid #ddd;
   font-size: 18px;
   margin: 12px 15px 12px 15px;
@@ -1146,11 +1146,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #myTable th, #myTable td, #myTable11 th, #myTable11 td  {
   text-align: left;
   padding: 12px;
+  position: center;
 }
 
 #myTable tr, #myTable11 tr  {
   border-bottom: 1px solid #ddd;
-  padding-bottom: 10px
+  padding-bottom: 10px;
+  position: center;
 }
 
 #myTable tr.header, #myTable tr:hover, #myTable11 tr.header, #myTable11 tr:hover {
