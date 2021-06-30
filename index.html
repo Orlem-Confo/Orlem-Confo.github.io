@@ -65,6 +65,13 @@
             </ul>
           </li> -->
           <li class="menu-has-children">
+            <a href="#worksheets">Worksheets</a>
+            <ul>
+              <li><a href="#" data-toggle="modal" data-target="#worksheets_xth">X<sup>th</sup></a></li>
+              <li><a href="#" data-toggle="modal" data-target="#worksheets_xith">XI<sup>th</sup></a></li>
+            </ul>
+          </li>
+          <li class="menu-has-children">
             <a href="#">Extras</a>
             <ul>
               <li><a href="https://www.vatican.va/archive/ENG0015/_INDEX.HTM" target="_blank"
@@ -117,6 +124,24 @@
     <!--==========================
       Contact Section
     ============================-->
+
+    <section id="worksheets" class="section-bg wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h3 style="color: #fff;">Worksheets</h3>
+          <p style="font-size: large;">
+            <div class="text-center row justify-content-center">
+              <button class="btn btn-get-started" type="button" data-toggle="modal" data-target="#worksheets_xth">
+                X<sup>th</sup>
+              </button>
+              <button class="btn btn-get-started" type="button" data-toggle="modal" data-target="#worksheets_xith">
+                XI<sup>th</sup>
+              </button>
+            </div>
+          </p>
+        </div>
+      </div>
+    </section>
 
     <section id="contact" class="section-bg wow fadeInUp">
       <div class="container">
@@ -192,6 +217,7 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
+  <!-- Registrations Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -226,11 +252,66 @@
   </div>
 
 
+  <!-- Confirmation Q&A -->
   <div class="modal fade" id="confoqa" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content" style="background-color: #00000099;">
         <div class="modal-body">
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSx9gP3WIXubGbmHAILkln7iuSlHbKaXYmJ55W_d6MUv8oSQ/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Worksheets Xth -->
+  <div class="modal fade" id="worksheets_xth" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h2 text-dark" id="exampleModalLabel">Worksheets - X<sup>th</sup></h5>
+          <button type="button" class="btn btn-outline-dark" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <div class="container text-center">
+              <button type="button" class="btn btn-block btn-dark">
+                <a href="#" target="_blank" class="btn-get-started">Download the latest worksheet</a>
+              </button>
+            <hr>
+              <button type="button" class="btn btn-block btn-dark">
+                <a href="#" target="_blank" class="btn-get-started">Previous Worksheets</a>
+              </button>
+          </div> -->
+          <p class="text-center text-dark">There aren't any worksheets to display</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Worksheets XIth -->
+  <div class="modal fade" id="worksheets_xith" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h2 text-dark" id="exampleModalLabel">Worksheets - XI<sup>th</sup></h5>
+          <button type="button" class="btn btn-outline-dark" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <div class="container text-center">
+              <button type="button" class="btn btn-block btn-dark">
+                <a href="#" target="_blank" class="btn-get-started">Download the latest worksheet</a>
+              </button>
+            <hr>
+              <button type="button" class="btn btn-block btn-dark">
+                <a href="#" target="_blank" class="btn-get-started">Previous Worksheets</a>
+              </button>
+          </div> -->
+          <p class="text-center text-dark">There aren't any worksheets to display</p>
         </div>
       </div>
     </div>
