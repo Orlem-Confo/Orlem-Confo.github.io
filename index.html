@@ -41,13 +41,15 @@
   <style>
     body {
       background-color: black;
+      opacity: 0;
+      transition: opacity 0.5s;
     }
   </style>
 
 </head>
 
 
-<body class="wow fadeIn">
+<body onload="document.body.style.opacity='1'">
 
   <!--==========================
     Header
